@@ -6,3 +6,4 @@ protocolo git
 - git add .
 - git commit -m "nome/descrição da alteração"
 - git push
+- git pull (atualização da sua versão "desktop" com a versão do github)
