@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemática</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contas matemáticas</h1>
+
+    <section>
+        <h2>Soma</h2>
+        <label for="n1">Primeiro Número:</label><br>
+        <input type="text" id="som1" placeholder="Digite o primeiro número"><br>
+        <label for="n2">Segundo Número:</label><br>
+        <input type="text" id="som2" placeholder="Digite o segundo número"><br><br>
+        <button onclick="somar()">SOMAR</button><br>
+        <p>Resultado: <span id="somaRes"></span></p>
+    </section>
+
+    <section>
+        <h2>Subtração</h2>
+        <label for="n1">Primeiro Número:</label><br>
+        <input type="text" id="sub1" placeholder="Digite o primeiro número"><br>
+        <label for="n2">Segundo Número:</label><br>
+        <input type="text" id="sub2" placeholder="Digite o segundo número"><br><br>
+        <button onclick="subtrair()">SUBTRAIR</button><br>
+        <p>Resultado: <span id="subRes"></span></p>
+    </section>
+
+    <section>
+        <h2>Multiplicação</h2>
+        <label for="n1">Primeiro Número:</label><br>
+        <input type="text" id="multi1" placeholder="Digite o primeiro número"><br>
+        <label for="n2">Segundo Número:</label><br>
+        <input type="text" id="multi2" placeholder="Digite o segundo número"><br><br>
+        <button onclick="multiplicar()">MULTIPLICAR</button><br>
+        <p>Resultado: <span id="multiRes"></span></p>
+    </section>
+
+    <section>
+        <h2>Divisão</h2>
+        <label for="n1">Primeiro Número:</label><br>
+        <input type="text" id="div1" placeholder="Digite o primeiro número"><br>
+        <label for="n2">Segundo Número:</label><br>
+        <input type="text" id="div2" placeholder="Digite o segundo número"><br><br>
+        <button onclick="dividir()">DIVIDIR</button><br>
+        <p>Resultado: <span id="divRes"></span></p>
+    </section>
+
+    <script>
+        function somar(){
+            var somaNumero1 = parseFloat(document.getElementById("som1").value)
+            var somaNumero2 = parseFloat(document.getElementById("som2").value)
+            var somaRes = document.getElementById("somaRes")
+            somaRes.innerHTML = somaNumero1 + somaNumero2
+            return somaRes
+        }
+
+        function subtrair(){
+            var subNumero1 = parseFloat(document.getElementById("sub1").value)
+            var subNumero2 = parseFloat(document.getElementById("sub2").value)
+            var subRes = document.getElementById("subRes")
+            subRes.innerHTML = subNumero1 - subNumero2
+            return subRes
+        }
+
+        function multiplicar(){
+            var multiNumero1 = parseFloat(document.getElementById("multi1").value)
+            var multiNumero2 = parseFloat(document.getElementById("multi2").value)
+            var multiRes = document.getElementById("multiRes")
+            multiRes.innerHTML = multiNumero1 * multiNumero2
+            return multiRes
+        }
+
+        function dividir(){
+            var divNumero1 = parseFloat(document.getElementById("div1").value)
+            var divNumero2 = parseFloat(document.getElementById("div2").value)
+            var divRes = document.getElementById("divRes")
+            divRes.innerHTML = divNumero1 / divNumero2
+            return divRes
+        }
+    </script>
+</body>
+</html>
