@@ -58,30 +58,38 @@ function mediaImc(){
     var height = parseFloat(document.getElementById("altura").value)
     var imc = document.getElementById("respImc")
     var tipo = document.getElementById("type")
-    var res = weight / (height * height)
 
+    if(isNaN(weight) || isNaN(height)){
+        imc.textContent = "Digite apenas números."
+        document.getElementById("type").textContent = " "
+        return
+    }
+
+    var res = weight / (height * height).toFixed(2)
+
+    
     if(res >= 40){
-        imc.textContent = res.toFixed(2)
+        imc.textContent = res
         tipo.textContent = "OBESIDADE GRAU III"
         tipo.style.color = "red"
     } else if (res <= 39.9 && res >= 35){
-        imc.textContent = res.toFixed(2)
+        imc.textContent = res
         tipo.textContent = "OBESIDADE GRAU II"
         tipo.style.color = "orange"
     } else if (res <= 34.9 && res >= 30){
-        imc.textContent = res.toFixed(2)
+        imc.textContent = res
         tipo.textContent = "OBESIDADE GRAU I"
         tipo.style.color = "yellow"
     } else if (res <= 29.9 && res >= 25){
-        imc.textContent = res.toFixed(2)
+        imc.textContent = res
         tipo.textContent = "SOBREPESO"
         tipo.style.color = "#fdff7e"
     } else if(res <= 24.9 && res >= 18.6){
-        imc.textContent = res.toFixed(2)
+        imc.textContent = res
         tipo.textContent = "NORMAL"
         tipo.style.color = "green"
     } else {
-        imc.textContent = res.toFixed(2)
+        imc.textContent = res
         tipo.textContent = "ABAIXO DO NORMAL"
         tipo.style.color = "yellow"
     }
@@ -90,16 +98,22 @@ function mediaImc(){
 function porteiro(){
     var ano = parseFloat(document.getElementById("ano").value)
     var resp = document.getElementById("respBalada")
-    var calculo = 2025 - ano
+
+    if(isNaN(ano)){
+        resp.textContent = "Digite apenas números."
+        return
+    }
+
+    const thisYear = new Date().getFullYear();
+    const calculo = thisYear - ano
 
     if(calculo >= 18 && calculo < 120){
-        resp.textContent = "TÁ LIBERADO CHEFIA"
+        resp.textContent = "Tá liberado ✅"
         resp.style.color = "green"
     } else if(calculo < 18) {
-        resp.textContent = "VENHA QUANDO TIVER MAIS VELHO"
+        resp.textContent = "Proibido passar 🚫"
         resp.style.color = "red"
     } else {
-        resp.textContent = "TÁ COM O PÉ NA COVA"
-        resp.style.color = "black"
+        resp.textContent = "💀"
     }
 }
