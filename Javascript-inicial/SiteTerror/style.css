@@ -12,20 +12,33 @@
     box-sizing: border-box;
 }
 
+body{
+ /* background-image: url("img_tree.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll; */
+}
+
 #width-nav{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    min-height: 50px;
+    height: auto;
     background-color: var(--black);
     color: var(--gray);
-    border: 2px solid black;
 }
 
 #side-button{
     position: fixed;
     margin-left: 10px;
     left: 0;
+    border: none;
+    height: 43px;
+    width: 50px;
+    border-radius: 999px;
+    background-color: var(--wine-red);
 }
 
 /* The side navigation menu */
