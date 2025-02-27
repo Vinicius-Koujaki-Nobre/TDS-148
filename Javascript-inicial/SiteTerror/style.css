@@ -87,6 +87,22 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+  }  
+  
+  /* .banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    min-height: 80px;
+    height: auto;
+  } */
+
+  .banner h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .banner img {
