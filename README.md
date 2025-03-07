@@ -18,15 +18,18 @@ Sobre o vídeo que foi apresentado em sala do Fábio Akita,
 houveram vários tópicos abordados que mostram a realidade do
 mercado de trabalho de desenvolvimento e também sobre o nível
 das pessoas que nele trabalham.
+
 O mercado de trabalho teve um crescimento excessivo no período
 da pandemia, onde vários foram contratados sem ter alguma
 experiência real, já que cursos de coaching tem peso nenhum em
 relação a conhecimentos adquiridos em faculdades e cursos
 presenciais.
+
 E com a saturação da área de trabalho com “falsos-devs”, com o
 passar do tempo as coisas foram voltando ao normal, e com isso
 vários foram demitidos, pois “Se você cozinha um miojo, você pode
 ser considerado um chefe de cozinha?”.
+
 Houveram mais alguns tópicos, como a utilização de IA’s
 (principalmente para “facilitar a vida do front-enzo”.) e
 conhecimentos sobre as empresas com suas linguagens
