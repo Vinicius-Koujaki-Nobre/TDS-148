@@ -8,7 +8,7 @@ protocolo git
 - git push
 - git pull (atualização da sua versão "desktop" com a versão do github)
 
-- 
+  
 
 - Nome: Vinicius Nobre Data: 06/03/2025
 
