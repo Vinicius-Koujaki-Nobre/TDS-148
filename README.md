@@ -42,7 +42,8 @@ isso parece muito uma frase de coach, e por fim, NUNCA ouça
 coach’s, PRINCIPALMENTE os que nunca fizeram uma linha de
 código.
 
-Fábio Luis Batista Santos - 06/03/2025
+
+- Fábio Luis Batista Santos - 06/03/2025
 
 
 Sobre o vídeo produzido pelo canal @Manodeyvin - “programação ainda é a profissão do futuro?”, onde Manodeyvin reage a um episódio do flow podcast com Fábio Akita.
